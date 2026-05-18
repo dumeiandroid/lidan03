@@ -33,7 +33,7 @@ export async function onRequest(context) {
       // Files diambil dari objects di folder saat ini saja
       files: (list.objects || []).filter(obj => obj.key !== prefix).map(obj => ({
         key: obj.key,
-        url: `https://assets.lidan.co.id/${obj.key}`,
+        url: `https://assets.indahabadi.my.id/${obj.key}`,
         uploaded: obj.uploaded
       })),
       nextCursor: list.truncated ? list.cursor : null

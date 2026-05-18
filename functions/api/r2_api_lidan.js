@@ -45,7 +45,7 @@ export async function onRequest(context) {
           // File di level ini
           files.push(...list.objects.map(obj => ({
             key: obj.key,
-            url: `https://assets.lidan.co.id/${obj.key}`,
+            url: `https://assets.indahabadi.my.id/${obj.key}`,
             size: obj.size,
             uploaded: obj.uploaded,
             type: "file"
@@ -76,7 +76,7 @@ export async function onRequest(context) {
           const list = await env.LIDAN_BUCKET.list(listOptions);
           files.push(...list.objects.map(obj => ({
             key: obj.key,
-            url: `https://assets.lidan.co.id/${obj.key}`,
+            url: `https://assets.indahabadi.my.id/${obj.key}`,
             size: obj.size,
             uploaded: obj.uploaded,
             type: "file"
@@ -111,7 +111,7 @@ export async function onRequest(context) {
         });
         return new Response(JSON.stringify({
           success: true,
-          url: `https://assets.lidan.co.id/${fileName}`
+          url: `https://assets.indahabadi.my.id/${fileName}`
         }), { headers: { "Content-Type": "application/json", ...corsHeaders } });
       }
 

@@ -59,7 +59,7 @@ export async function onRequest(context) {
     return new Response(JSON.stringify({ 
       success: true, 
       key: fileName,
-      url: `https://assets.lidan.co.id/${fileName}` 
+      url: `https://assets.indahabadi.my.id/${fileName}` 
     }), {
       headers: { ...corsHeaders, "Content-Type": "application/json" },
     });

@@ -20,7 +20,7 @@ export async function onRequest(context) {
       const list = await env.MY_BUCKET.list();
       const files = list.objects.map(obj => ({
         key: obj.key,
-        url: `https://img.cipta.my.id/${obj.key}`,
+        url: `https://assets.indahabadi.my.id/${obj.key}`,
         uploaded: obj.uploaded
       }));
       return new Response(JSON.stringify(files), { headers: corsHeaders });
