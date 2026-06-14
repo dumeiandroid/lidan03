@@ -1,4 +1,5 @@
-export async function onRequest(context) {
+// force-redeploy-2026-06-14
+   export async function onRequest(context) {
   const { request, env } = context;
   
   // Pengaturan CORS agar bisa diakses dari Localhost maupun Domain Utama
